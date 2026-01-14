@@ -1,0 +1,21 @@
+{
+  "name": "awa-science-icons",
+  "version": "0.0.1",
+  "title": "Awa Science Icons",
+  "author": "meconeko",
+  "description": "Replaces science icons from the base game and other mods with various brainrot.",
+  "dependencies": [
+    "? Cerys-Moon-of-Fulgora",
+    "? corrundum",
+    "? metal-and-stars",
+    "? castra",
+    "? skewer_planet_vesta",
+    "? maraxsis",
+    "? planet-muluna",
+    "? tenebris-prime",
+    "? VoidProcessing",
+    "? rubia",
+    "? Factorio-Tiberium"
+  ],
+  "factorio_version": "2.0"
+}
