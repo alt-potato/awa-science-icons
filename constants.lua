@@ -190,7 +190,7 @@ constants.science_overrides = {
 
 	-- vesta
 	["gas-manipulation-science-pack"] = {
-		{ type = { "tool", "recipe" }, icon = "icon/bj-cotton-candy.png" },
+		{ type = { "tool", "recipe" }, icon = "icons/bj-cotton-candy.png" },
 		{ type = "technology", icon = "technology/bj-cotton-candy.png" },
 	},
 
