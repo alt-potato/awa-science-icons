@@ -68,10 +68,51 @@ constants.science_overrides = {
 	},
 
 	-- space age
-	["metallurgic-science-pack"] = "vulpix.png",
-	["electromagnetic-science-pack"] = "niko.png",
-	["agricultural-science-pack"] = "bungus.png",
-	["cryogenic-science-pack"] = "cirno.png",
+	["metallurgic-science-pack"] = {
+		{ type = "default", icon = "vulpix.png" },
+
+		-- age of production
+		{
+			type = "recipe",
+			name = "aop-military-specialized-metallurgic-science-pack",
+			icon = "icons/military-vulpix.png",
+		},
+		{
+			type = "technology",
+			name = "aop-specialized-science",
+			icon = "technology/blender.png",
+		}
+	},
+	["electromagnetic-science-pack"] = {
+		{ type = "default", icon = "niko.png" },
+
+		-- age of production
+		{
+			type = "recipe",
+			name = "aop-petrochemistry-specialized-electromagnetic-science-pack",
+			icon = "icons/niko-oil.png",
+		},
+	},
+	["agricultural-science-pack"] = {
+		{ type = "default", icon = "bungus.png" },
+
+		-- age of production
+		{
+			type = "recipe",
+			name = "aop-hybridation-specialized-agricultural-science-pack",
+			icon = "icons/wungus.png",
+		},
+	},
+	["cryogenic-science-pack"] = {
+		{ type = "default", icon = "cirno.png" },
+
+		-- age of production
+		{
+			type = "recipe",
+			name = "aop-hydraulics-specialized-cryogenic-science-pack",
+			icon = "icons/hydraulic-cirno.png",
+		},
+	},
 	["promethium-science-pack"] = {
 		{ type = "default", icon = "estradiol.png" },
 
