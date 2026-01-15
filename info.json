@@ -5,6 +5,8 @@
   "author": "meconeko",
   "description": "Replaces science icons from the base game and other mods with various brainrot.",
   "dependencies": [
+    "? base",
+    "? space-age",
     "? Cerys-Moon-of-Fulgora",
     "? corrundum",
     "? metal-and-stars",
