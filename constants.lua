@@ -19,13 +19,65 @@ constants.mod_name = "awa-science-icons"
 ---@type table<string, string|ScienceIconOverrideEntry[]>
 constants.science_overrides = {
 	-- base
-	["automation-science-pack"] = "autism.png",
-	["logistic-science-pack"] = "glorp.png",
-	["military-science-pack"] = "miku-pipe.png",
-	["chemical-science-pack"] = "bridget.png",
-	["production-science-pack"] = "heavyblade.png",
+	["automation-science-pack"] = {
+		{ type = "default", icon = "autism.png" },
+
+		-- cubium
+		{
+			type = "recipe",
+			name = "automation-science-pack-cubic",
+			icons = { "", "icons/autism.png" },
+		},
+	},
+	["logistic-science-pack"] = {
+		{ type = "default", icon = "glorp.png" },
+
+		-- cubium
+		{
+			type = "recipe",
+			name = "logistic-science-pack-cubic",
+			icons = { "", "icons/glorp.png" },
+		},
+	},
+	["military-science-pack"] = {
+		{ type = "default", icon = "miku-pipe.png" },
+
+		-- cubium
+		{
+			type = "recipe",
+			name = "military-science-pack-cubic",
+			icons = { "", "icons/miku-pipe.png" },
+		},
+	},
+	["chemical-science-pack"] = {
+		{ type = "default", icon = "bridget.png" },
+
+		-- cubium
+		{
+			type = "recipe",
+			name = "chemical-science-pack-cubic",
+			icons = { "", "icons/bridget.png" },
+		},
+	},
+	["production-science-pack"] = {
+		{ type = "default", icon = "heavyblade.png" },
+
+		-- cubium
+		{
+			type = "recipe",
+			name = "production-science-pack-cubic",
+			icons = { "", "icons/heavyblade.png" },
+		},
+	},
 	["utility-science-pack"] = {
 		{ type = "default", icon = "donqui.png" },
+
+		-- cubium
+		{
+			type = "recipe",
+			name = "utility-science-pack-cubic",
+			icons = { "", "icons/donqui.png" },
+		},
 
 		-- rubia
 		{
@@ -43,11 +95,6 @@ constants.science_overrides = {
 		{ type = "default", icon = "girlmilk.png" },
 
 		-- muluna
-		{
-			type = "recipe",
-			name = "space-science-pack-muluna",
-			icon = "icons/girlmilk.png",
-		},
 		{
 			type = "technology",
 			name = "advanced-space-science-pack",
@@ -82,6 +129,13 @@ constants.science_overrides = {
 			name = "aop-specialized-science",
 			icon = "technology/blender.png",
 		},
+
+		-- cubium
+		{
+			type = "recipe",
+			name = "metallurgic-science-pack-cubic",
+			icons = { "", "icons/vulpix.png" },
+		},
 	},
 	["electromagnetic-science-pack"] = {
 		{ type = "default", icon = "niko.png" },
@@ -91,6 +145,13 @@ constants.science_overrides = {
 			type = "recipe",
 			name = "aop-petrochemistry-specialized-electromagnetic-science-pack",
 			icon = "icons/niko-oil.png",
+		},
+
+		-- cubium
+		{
+			type = "recipe",
+			name = "electromagnetic-science-pack-cubic",
+			icons = { "", "icons/niko.png" },
 		},
 	},
 	["agricultural-science-pack"] = {
@@ -102,6 +163,13 @@ constants.science_overrides = {
 			name = "aop-hybridation-specialized-agricultural-science-pack",
 			icon = "icons/wungus.png",
 		},
+
+		-- cubium
+		{
+			type = "recipe",
+			name = "agricultural-science-pack-cubic",
+			icons = { "", "icons/bungus.png" },
+		},
 	},
 	["cryogenic-science-pack"] = {
 		{ type = "default", icon = "cirno.png" },
@@ -112,15 +180,34 @@ constants.science_overrides = {
 			name = "aop-hydraulics-specialized-cryogenic-science-pack",
 			icon = "icons/hydraulic-cirno.png",
 		},
+
+		-- cubium
+		{
+			type = "recipe",
+			name = "cryogenic-science-pack-cubic",
+			icons = { "", "icons/cirno.png" },
+		},
 	},
 	["promethium-science-pack"] = {
 		{ type = "default", icon = "estradiol.png" },
+
+		-- cubium
+		{
+			type = "recipe",
+			name = "promethium-science-pack-cubic",
+			icons = { "", "icons/estradiol.png" },
+		},
 
 		-- rubia
 		{
 			type = "recipe",
 			name = "rubia-biofusion-promethium-science-pack",
 			icons = { "icons/estradiol.png" },
+		},
+		{
+			type = "technology",
+			name = "rubia-biofusion-promethium-science-pack",
+			icon = "technology/soy-milk.png",
 		},
 	},
 
@@ -157,17 +244,107 @@ constants.science_overrides = {
 		},
 		{
 			type = "technology",
-			name = "interstellar-science-pack",
 			icon = "technology/zulu.png",
 		},
 	},
 
+	-- outer rim
+	["outer-rim-cryochemical-science-pack"] = {
+		{ type = { "tool", "recipe" }, icon = "icons/weed-cirno.png" },
+		{
+			type = "technology",
+			icon = "technology/weed-cirno.png",
+		},
+	},
+	["outer-rim-insulation-science-pack"] = {
+		{ type = { "tool", "recipe" }, icon = "icons/bnuuy-box-small.png" },
+		{
+			type = "technology",
+			icon = "technology/bnuuy-box-large.png",
+		},
+	},
+	["outer-rim-thermodynamic-science-pack"] = {
+		{ type = { "tool", "recipe" }, icon = "icons/glaceon-flower.png" },
+		{
+			type = "technology",
+			icon = "technology/glaceon-flower.png",
+		},
+	},
+	["outer-rim-spacecraft-science-pack"] = {
+		{ type = { "tool", "recipe" }, icon = "icons/structural-pylon.png" },
+		{
+			type = "technology",
+			icon = "technology/structural-pylon.png",
+		},
+	},
+
+	-- paracelsin (outer rim)
+	["galvanization-science-pack"] = {
+		{ type = { "tool", "recipe" }, icon = "icons/galv-square-steel.png" },
+		{
+			type = "technology",
+			icon = "technology/galv-square-steels.png",
+		},
+	},
+
+	-- rubia
+	["makeshift-biorecycling-science-pack"] = {
+		{
+			type = { "item", "recipe" },
+			icon = "icons/meat.png",
+		},
+		{
+			type = "technology",
+			name = "rubia-progression-stage1B",
+			icon = "technology/meat.png",
+		},
+	},
+	["ghetto-biorecycling-science-pack"] = {
+		{
+			type = { "item", "recipe" },
+			name = "ghetto-biorecycling-science-pack",
+			icon = "icons/patty.png",
+		},
+		{
+			type = "technology",
+			name = "rubia-progression-stage2",
+			icon = "technology/patty.png",
+		},
+	},
+	["biorecycling-science-pack"] = {
+		{ type = { "tool", "recipe" }, icon = "icons/borgar.png" },
+	},
+	["rubia-biofusion-science-pack"] = {
+		{ type = "default", icon = "poo.png" },
+		{
+			type = "technology",
+			name = "rubia-biofusion-science-pack",
+			icon = "technology/poo.png",
+		},
+	},
+
+	-- secretas + frozeta (outer rim)
+	["golden-science-pack"] = {
+		{ type = { "tool", "recipe" }, icon = "icons/gapple.png" },
+		{
+			type = "technology",
+			icon = "technology/gapple-recipe.png",
+		},
+
+		-- cubium
+		{
+			type = "recipe",
+			name = "golden-science-pack-cubic",
+			icons = { "", "icons/gapple.png" },
+		},
+	},
+
 	-- shattered planet
-	["ske_hea_science_pack"] = "cherry-wellcheers.png",
-	["ske_hec_science_pack"] = "blue-wellcheers.png",
-	["ske_hef_science_pack"] = "grape-wellcheers.png",
-	["ske_heu_science_pack"] = "strawberry-wellcheers.png",
-	["ske_hep_science_pack"] = "regular-wellcheers.png",
+	["ske_hea_science_pack"] = { { type = { "tool", "recipe" }, icon = "icons/cherry-wellcheers.png" } },
+	["ske_hec_science_pack"] = { { type = { "tool", "recipe" }, icon = "icons/blue-wellcheers.png" } },
+	["ske_hef_science_pack"] = { { type = { "tool", "recipe" }, icon = "icons/grape-wellcheers.png" } },
+	["ske_heu_science_pack"] = { { type = { "tool", "recipe" }, icon = "icons/strawberry-wellcheers.png" } },
+	["ske_hep_science_pack"] = { { type = { "tool", "recipe" }, icon = "icons/regular-wellcheers.png" } },
 	["ske_antimatter_cell"] = {
 		{ type = "tool", icon = "icons/antimatter-fuel.png" },
 		{ type = "recipe", icon = "icons/antimatter-fuel.png" },
@@ -241,42 +418,6 @@ constants.science_overrides = {
 
 	-- void processing
 	["voidp-void-science-pack"] = "progesterone.png",
-
-	-- rubia
-	["makeshift-biorecycling-science-pack"] = {
-		{
-			type = { "item", "recipe" },
-			icon = "icons/meat.png",
-		},
-		{
-			type = "technology",
-			name = "rubia-progression-stage1B",
-			icon = "technology/meat.png",
-		},
-	},
-	["ghetto-biorecycling-science-pack"] = {
-		{
-			type = { "item", "recipe" },
-			name = "ghetto-biorecycling-science-pack",
-			icon = "icons/patty.png",
-		},
-		{
-			type = "technology",
-			name = "rubia-progression-stage2",
-			icon = "technology/patty.png",
-		},
-	},
-	["biorecycling-science-pack"] = {
-		{ type = "default", icon = "borgar.png" },
-	},
-	["rubia-biofusion-science-pack"] = {
-		{ type = "default", icon = "poo.png" },
-		{
-			type = "technology",
-			name = "rubia-biofusion-science-pack",
-			icon = "technology/poo.png",
-		},
-	},
 }
 
 --- @type IconOverrideType[]
