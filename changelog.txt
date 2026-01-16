@@ -1,13 +1,21 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 2026-01-16
+  Changes:
+    - Added Outer Rim (et al.) support
+    - Added Cubium support
+    - Fixed some missing technology graphics
+    - Fixed some missing recipe/technology locales
+---------------------------------------------------------------------------------------------------
 Version: 1.0.2
 Date: 2026-01-14
   Changes:
-    - Add Age of Production support
+    - Added Age of Production support
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.1
 Date: 2026-01-14
   Changes:
-    - Update space science graphics
+    - Updated space science graphics
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 2026-01-13
