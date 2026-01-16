@@ -81,7 +81,7 @@ constants.science_overrides = {
 			type = "technology",
 			name = "aop-specialized-science",
 			icon = "technology/blender.png",
-		}
+		},
 	},
 	["electromagnetic-science-pack"] = {
 		{ type = "default", icon = "niko.png" },
@@ -232,7 +232,11 @@ constants.science_overrides = {
 	-- vesta
 	["gas-manipulation-science-pack"] = {
 		{ type = { "tool", "recipe" }, icon = "icons/bj-cotton-candy.png" },
-		{ type = "technology", icon = "technology/bj-cotton-candy.png" },
+		{
+			type = "technology",
+			name = "s1_gas_manipulation_science_pack",
+			icon = "technology/bj-cotton-candy.png",
+		},
 	},
 
 	-- void processing
