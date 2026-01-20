@@ -271,10 +271,10 @@ constants.science_overrides = {
 		},
 	},
 	["outer-rim-spacecraft-science-pack"] = {
-		{ type = { "tool", "recipe" }, icon = "icons/structural-pylon.png" },
+		{ type = { "tool", "recipe" }, icon = "icons/the-wandering-earth.png" },
 		{
 			type = "technology",
-			icon = "technology/structural-pylon.png",
+			icon = "technology/the-wandering-earth.png",
 		},
 	},
 
