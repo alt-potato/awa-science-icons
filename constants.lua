@@ -448,6 +448,62 @@ constants.science_overrides = {
 
 	-- void processing
 	["voidp-void-science-pack"] = "progesterone.png",
+
+	-- voidcraft
+	["void-science-pack"] = {
+		{ type = { "tool", "recipe" }, icon = "icons/skyblock.png" },
+		{
+			type = "recipe",
+			name = "s6xvc-void-science-pack",
+			icons = { "icons/skyblock.png" },
+		},
+		{
+			type = "technology",
+			name = "s6x-void-science-pack",
+			icon = "technology/skyblock.png",
+		},
+		{
+			type = "technology",
+			name = "s6x-void-science-pack-vc",
+			icon = "technology/skyblock-vc.png",
+		},
+	},
+	["esoteric-science-pack"] = {
+		{ type = { "tool", "recipe" }, icon = "icons/coobie.png" },
+		{
+			type = "recipe",
+			name = "s6xvc-esoteric-science-pack",
+			icons = { "icons/coobie.png" },
+		},
+		{
+			type = "technology",
+			name = "s6x-esoteric-science-pack",
+			icon = "technology/coobie.png",
+		},
+		{
+			type = "technology",
+			name = "s6x-esoteric-science-pack-vc",
+			icon = "technology/coobie-vc.png",
+		},
+	},
+	["celestial-science-pack"] = {
+		{ type = { "tool", "recipe" }, icon = "icons/marisa.png" },
+		{
+			type = "recipe",
+			name = "s6xvc-celestial-science-pack",
+			icons = { "icons/marisa.png" },
+		},
+		{
+			type = "technology",
+			name = "s6x-celestial-science-pack",
+			icon = "technology/marisa.png",
+		},
+		{
+			type = "technology",
+			name = "s6x-celestial-science-pack-vc",
+			icon = "technology/marisa-vc.png",
+		},
+	},
 }
 
 --- @type IconOverrideType[]
