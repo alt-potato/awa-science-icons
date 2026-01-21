@@ -287,6 +287,36 @@ constants.science_overrides = {
 		},
 	},
 
+	-- pyalienlife
+	["py-science-pack-1"] = {
+		{ type = { "tool", "recipe" }, icon = "icons/dirt-jar.png" },
+		{
+			type = "technology",
+			icon = "technology/py-dirt-jar.png",
+		},
+	},
+	["py-science-pack-2"] = {
+		{ type = { "tool", "recipe" }, icon = "icons/choccy-milk.png" },
+		{
+			type = "technology",
+			icon = "technology/py-choccy-milk.png",
+		},
+	},
+	["py-science-pack-3"] = {
+		{ type = { "tool", "recipe" }, icon = "icons/gougar.png" },
+		{
+			type = "technology",
+			icon = "technology/py-gougar.png",
+		},
+	},
+	["py-science-pack-4"] = {
+		{ type = { "tool", "recipe" }, icon = "icons/breadto.png" },
+		{
+			type = "technology",
+			icon = "technology/py-breadto.png",
+		},
+	},
+
 	-- rubia
 	["makeshift-biorecycling-science-pack"] = {
 		{
