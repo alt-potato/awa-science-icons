@@ -1,8 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 2026-01-21
+  Changes:
+    - Added pyalienlife and Voidcraft support
+---------------------------------------------------------------------------------------------------
 Version: 1.0.4
 Date: 2026-01-19
   Changes:
-    - Replace outer-rim-spacecraft-science-pack with a better image
+    - Replaced outer-rim-spacecraft-science-pack with a better image
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.3
 Date: 2026-01-16
