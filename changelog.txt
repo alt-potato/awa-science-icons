@@ -2,7 +2,7 @@
 Version: 1.0.6
 Date: 2026-01-28
   Changes:
-    - Add graphics for metal-and-stars quantum science pack intermediaries
+    - Add graphics and locale for metal-and-stars quantum science pack intermediaries
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.5
 Date: 2026-01-21
