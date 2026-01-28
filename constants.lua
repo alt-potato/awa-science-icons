@@ -233,6 +233,16 @@ constants.science_overrides = {
 			icon = "recipes/amon-antimatter.png",
 		},
 	},
+	["inert-quantum-science-pack"] = {
+		{ type = "item", icon = "icons/kanade-inert.png" },
+		{ type = "recipe", name = "inert-science-pack-salvage", icons = { "", "icons/kanade-inert.png" } },
+	},
+	["unstable-quantum-science-pack"] = {
+		{ type = "item", icon = "icons/mizuki-unstable.png" },
+	},
+	["volatile-quantum-science-pack"] = {
+		{ type = { "item", "recipe" }, icon = "icons/mafuyu-volatile.png" },
+	},
 	["quantum-science-pack"] = "wonderhoy.png",
 	["ring-science-pack"] = "funyun.png",
 
