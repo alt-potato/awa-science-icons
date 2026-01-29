@@ -218,7 +218,16 @@ constants.science_overrides = {
 	["cerysian-science-pack"] = "ralsei.png",
 
 	-- corrundum
-	["electrochemical-science-pack"] = "mc-chicken.png",
+	["electrochemical-science-pack"] = {
+		{ type = "default", icon = "mc-chicken.png"},
+
+		-- cubium
+		{
+			type = "recipe",
+			name = "electrochemical-science-pack-cubic",
+			icons = { "", "icons/mc-chicken.png" },
+		},
+	},
 
 	-- maraxys
 	["hydraulic-science-pack"] = "vaporeon.png",
