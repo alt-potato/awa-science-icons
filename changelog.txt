@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.7
+Date: 2026-01-29
+  Changes:
+    - Fix locale for precise electronic science pack and electrochemical science pack (cubic recipe)
+---------------------------------------------------------------------------------------------------
 Version: 1.0.6
 Date: 2026-01-28
   Changes:
