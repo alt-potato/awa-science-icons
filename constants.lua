@@ -535,7 +535,7 @@ constants.science_overrides = {
 	},
 }
 
---- @type IconOverrideType[]
+---@type IconOverrideType[]
 constants.default_options = { "tool", "recipe", "technology" }
 
 local default_data = {
@@ -545,11 +545,11 @@ local default_data = {
 	["technology"] = { target = data.raw.technology, graphics_path = "technology/", icon_size = 256 },
 }
 
--- Overwrite the icons for a specific key in the target.
+---Overwrite the icons for a specific key in the target.
 ---@param key string
 ---@param override_type IconOverrideType
 ---@param override ScienceIconOverrideEntry
----@param extrapolate_icons boolean
+---@param extrapolate_icons? boolean
 constants.overwrite_icons = function(key, override_type, override, extrapolate_icons)
 	local default = default_data[override_type]
 	local target = default.target
