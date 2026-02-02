@@ -20,92 +20,92 @@ constants.mod_name = "awa-science-icons"
 constants.science_overrides = {
 	-- base
 	["automation-science-pack"] = {
-		{ type = "default", icon = "autism.png" },
+		{ type = "default", icon = "base/autism.png" },
 
 		-- cubium
 		{
 			type = "recipe",
 			name = "automation-science-pack-cubic",
-			icons = { "", "icons/autism.png" },
+			icons = { "", "icons/base/autism.png" },
 		},
 	},
 	["logistic-science-pack"] = {
-		{ type = "default", icon = "glorp.png" },
+		{ type = "default", icon = "base/glorp.png" },
 
 		-- cubium
 		{
 			type = "recipe",
 			name = "logistic-science-pack-cubic",
-			icons = { "", "icons/glorp.png" },
+			icons = { "", "icons/base/glorp.png" },
 		},
 	},
 	["military-science-pack"] = {
-		{ type = "default", icon = "miku-pipe.png" },
+		{ type = "default", icon = "base/miku-pipe.png" },
 
 		-- cubium
 		{
 			type = "recipe",
 			name = "military-science-pack-cubic",
-			icons = { "", "icons/miku-pipe.png" },
+			icons = { "", "icons/base/miku-pipe.png" },
 		},
 	},
 	["chemical-science-pack"] = {
-		{ type = "default", icon = "bridget.png" },
+		{ type = "default", icon = "base/bridget.png" },
 
 		-- cubium
 		{
 			type = "recipe",
 			name = "chemical-science-pack-cubic",
-			icons = { "", "icons/bridget.png" },
+			icons = { "", "icons/base/bridget.png" },
 		},
 	},
 	["production-science-pack"] = {
-		{ type = "default", icon = "heavyblade.png" },
+		{ type = "default", icon = "base/heavyblade.png" },
 
 		-- cubium
 		{
 			type = "recipe",
 			name = "production-science-pack-cubic",
-			icons = { "", "icons/heavyblade.png" },
+			icons = { "", "icons/base/heavyblade.png" },
 		},
 	},
 	["utility-science-pack"] = {
-		{ type = "default", icon = "donqui.png" },
+		{ type = "default", icon = "base/donqui.png" },
 
 		-- cubium
 		{
 			type = "recipe",
 			name = "utility-science-pack-cubic",
-			icons = { "", "icons/donqui.png" },
+			icons = { "", "icons/base/donqui.png" },
 		},
 
 		-- rubia
 		{
 			type = "recipe",
 			name = "rubia-bio-utility-science-pack",
-			icon = "icons/donqui-sprout.png",
+			icon = "icons/base/donqui-sprout.png",
 		},
 		{
 			type = "technology",
 			name = "rubia-bio-utility-science-pack",
-			icon = "technology/donqui-sprout.png",
+			icon = "technology/base/donqui-sprout.png",
 		},
 	},
 	["space-science-pack"] = {
-		{ type = "default", icon = "girlmilk.png" },
+		{ type = "default", icon = "base/girlmilk.png" },
 
 		-- muluna
 		{
 			type = "technology",
 			name = "advanced-space-science-pack",
-			icons = { "technology/girlmilk.png" },
+			icons = { "technology/base/girlmilk.png" },
 		},
 
 		-- cerys
 		{
 			type = "recipe",
 			name = "cerys-space-science-pack-from-methane-ice",
-			icons = { "icons/girlmilk.png" },
+			icons = { "icons/base/girlmilk.png" },
 		},
 		{
 			type = "technology",
@@ -116,7 +116,7 @@ constants.science_overrides = {
 
 	-- space age
 	["metallurgic-science-pack"] = {
-		{ type = "default", icon = "vulpix.png" },
+		{ type = "default", icon = "space-age/vulpix.png" },
 
 		-- age of production
 		{
@@ -134,11 +134,11 @@ constants.science_overrides = {
 		{
 			type = "recipe",
 			name = "metallurgic-science-pack-cubic",
-			icons = { "", "icons/vulpix.png" },
+			icons = { "", "icons/space-age/vulpix.png" },
 		},
 	},
 	["electromagnetic-science-pack"] = {
-		{ type = "default", icon = "niko.png" },
+		{ type = "default", icon = "space-age/niko.png" },
 
 		-- age of production
 		{
@@ -151,17 +151,17 @@ constants.science_overrides = {
 		{
 			type = "recipe",
 			name = "electromagnetic-science-pack-cubic",
-			icons = { "", "icons/niko.png" },
+			icons = { "", "icons/space-age/niko.png" },
 		},
 	},
 	["agricultural-science-pack"] = {
-		{ type = "default", icon = "bungus.png" },
+		{ type = "default", icon = "space-age/bungus.png" },
 
 		-- age of production
 		{
 			type = "recipe",
 			name = "aop-hybridation-specialized-agricultural-science-pack",
-			icon = "icons/wungus.png",
+			icon = "icons/space-age/wungus.png",
 		},
 
 		-- cubium
@@ -172,7 +172,7 @@ constants.science_overrides = {
 		},
 	},
 	["cryogenic-science-pack"] = {
-		{ type = "default", icon = "cirno.png" },
+		{ type = "default", icon = "space-age/cirno.png" },
 
 		-- age of production
 		{
@@ -185,24 +185,24 @@ constants.science_overrides = {
 		{
 			type = "recipe",
 			name = "cryogenic-science-pack-cubic",
-			icons = { "", "icons/cirno.png" },
+			icons = { "", "icons/space-age/cirno.png" },
 		},
 	},
 	["promethium-science-pack"] = {
-		{ type = "default", icon = "estradiol.png" },
+		{ type = "default", icon = "space-age/estradiol.png" },
 
 		-- cubium
 		{
 			type = "recipe",
 			name = "promethium-science-pack-cubic",
-			icons = { "", "icons/estradiol.png" },
+			icons = { "", "icons/space-age/estradiol.png" },
 		},
 
 		-- rubia
 		{
 			type = "recipe",
 			name = "rubia-biofusion-promethium-science-pack",
-			icons = { "icons/estradiol.png" },
+			icons = { "icons/space-age/estradiol.png" },
 		},
 		{
 			type = "technology",
@@ -219,7 +219,7 @@ constants.science_overrides = {
 
 	-- corrundum
 	["electrochemical-science-pack"] = {
-		{ type = "default", icon = "mc-chicken.png"},
+		{ type = "default", icon = "mc-chicken.png" },
 
 		-- cubium
 		{
@@ -233,27 +233,31 @@ constants.science_overrides = {
 	["hydraulic-science-pack"] = "vaporeon.png",
 
 	-- metal and stars
-	["nanite-science-pack"] = "argemia.png",
+	["nanite-science-pack"] = "metal-and-stars/argemia.png",
 	["anomaly-science-pack"] = {
-		{ type = "default", icon = "amon.png" },
+		{ type = "default", icon = "metal-and-stars/amon.png" },
 		{
 			type = "recipe",
 			name = "catalyzed-anomaly-science-pack",
-			icon = "recipes/amon-antimatter.png",
+			icon = "recipes/metal-and-stars/amon-antimatter.png",
 		},
 	},
 	["inert-quantum-science-pack"] = {
-		{ type = "item", icon = "icons/kanade-inert.png" },
-		{ type = "recipe", name = "inert-science-pack-salvage", icons = { "", "icons/kanade-inert.png" } },
+		{ type = "item", icon = "icons/metal-and-stars/kanade-inert.png" },
+		{
+			type = "recipe",
+			name = "inert-science-pack-salvage",
+			icons = { "", "icons/metal-and-stars/kanade-inert.png" },
+		},
 	},
 	["unstable-quantum-science-pack"] = {
-		{ type = "item", icon = "icons/mizuki-unstable.png" },
+		{ type = "item", icon = "icons/metal-and-stars/mizuki-unstable.png" },
 	},
 	["volatile-quantum-science-pack"] = {
-		{ type = { "item", "recipe" }, icon = "icons/mafuyu-volatile.png" },
+		{ type = { "item", "recipe" }, icon = "icons/metal-and-stars/mafuyu-volatile.png" },
 	},
-	["quantum-science-pack"] = "wonderhoy.png",
-	["ring-science-pack"] = "funyun.png",
+	["quantum-science-pack"] = "metal-and-stars/wonderhoy.png",
+	["ring-science-pack"] = "metal-and-stars/funyun.png",
 
 	-- muluna
 	["interstellar-science-pack"] = {
@@ -308,31 +312,31 @@ constants.science_overrides = {
 
 	-- pyalienlife
 	["py-science-pack-1"] = {
-		{ type = { "tool", "recipe" }, icon = "icons/dirt-jar.png" },
+		{ type = { "tool", "recipe" }, icon = "icons/pyalienlife/dirt-jar.png" },
 		{
 			type = "technology",
-			icon = "technology/py-dirt-jar.png",
+			icon = "technology/pyalienlife/py-dirt-jar.png",
 		},
 	},
 	["py-science-pack-2"] = {
-		{ type = { "tool", "recipe" }, icon = "icons/choccy-milk.png" },
+		{ type = { "tool", "recipe" }, icon = "icons/pyalienlife/choccy-milk.png" },
 		{
 			type = "technology",
-			icon = "technology/py-choccy-milk.png",
+			icon = "technology/pyalienlife/py-choccy-milk.png",
 		},
 	},
 	["py-science-pack-3"] = {
-		{ type = { "tool", "recipe" }, icon = "icons/gougar.png" },
+		{ type = { "tool", "recipe" }, icon = "icons/pyalienlife/gougar.png" },
 		{
 			type = "technology",
-			icon = "technology/py-gougar.png",
+			icon = "technology/pyalienlife/py-gougar.png",
 		},
 	},
 	["py-science-pack-4"] = {
-		{ type = { "tool", "recipe" }, icon = "icons/breadto.png" },
+		{ type = { "tool", "recipe" }, icon = "icons/pyalienlife/breadto.png" },
 		{
 			type = "technology",
-			icon = "technology/py-breadto.png",
+			icon = "technology/pyalienlife/py-breadto.png",
 		},
 	},
 
@@ -340,35 +344,35 @@ constants.science_overrides = {
 	["makeshift-biorecycling-science-pack"] = {
 		{
 			type = { "item", "recipe" },
-			icon = "icons/meat.png",
+			icon = "icons/rubia/meat.png",
 		},
 		{
 			type = "technology",
 			name = "rubia-progression-stage1B",
-			icon = "technology/meat.png",
+			icon = "technology/rubia/meat.png",
 		},
 	},
 	["ghetto-biorecycling-science-pack"] = {
 		{
 			type = { "item", "recipe" },
 			name = "ghetto-biorecycling-science-pack",
-			icon = "icons/patty.png",
+			icon = "icons/rubia/patty.png",
 		},
 		{
 			type = "technology",
 			name = "rubia-progression-stage2",
-			icon = "technology/patty.png",
+			icon = "technology/rubia/patty.png",
 		},
 	},
 	["biorecycling-science-pack"] = {
-		{ type = { "tool", "recipe" }, icon = "icons/borgar.png" },
+		{ type = { "tool", "recipe" }, icon = "icons/rubia/borgar.png" },
 	},
 	["rubia-biofusion-science-pack"] = {
-		{ type = "default", icon = "poo.png" },
+		{ type = "default", icon = "rubia/poo.png" },
 		{
 			type = "technology",
 			name = "rubia-biofusion-science-pack",
-			icon = "technology/poo.png",
+			icon = "technology/rubia/poo.png",
 		},
 	},
 
@@ -389,14 +393,20 @@ constants.science_overrides = {
 	},
 
 	-- shattered planet
-	["ske_hea_science_pack"] = { { type = { "tool", "recipe" }, icon = "icons/cherry-wellcheers.png" } },
-	["ske_hec_science_pack"] = { { type = { "tool", "recipe" }, icon = "icons/blue-wellcheers.png" } },
-	["ske_hef_science_pack"] = { { type = { "tool", "recipe" }, icon = "icons/grape-wellcheers.png" } },
-	["ske_heu_science_pack"] = { { type = { "tool", "recipe" }, icon = "icons/strawberry-wellcheers.png" } },
-	["ske_hep_science_pack"] = { { type = { "tool", "recipe" }, icon = "icons/regular-wellcheers.png" } },
+	["ske_hea_science_pack"] = {
+		{ type = { "tool", "recipe" }, icon = "icons/shattered-planet/cherry-wellcheers.png" },
+	},
+	["ske_hec_science_pack"] = { { type = { "tool", "recipe" }, icon = "icons/shattered-planet/blue-wellcheers.png" } },
+	["ske_hef_science_pack"] = { { type = { "tool", "recipe" }, icon = "icons/shattered-planet/grape-wellcheers.png" } },
+	["ske_heu_science_pack"] = {
+		{ type = { "tool", "recipe" }, icon = "icons/shattered-planet/strawberry-wellcheers.png" },
+	},
+	["ske_hep_science_pack"] = {
+		{ type = { "tool", "recipe" }, icon = "icons/shattered-planet/regular-wellcheers.png" },
+	},
 	["ske_antimatter_cell"] = {
-		{ type = "tool", icon = "icons/antimatter-fuel.png" },
-		{ type = "recipe", icon = "icons/antimatter-fuel.png" },
+		{ type = "tool", icon = "icons/shattered-planet/antimatter-fuel.png" },
+		{ type = "recipe", icon = "icons/shattered-planet/antimatter-fuel.png" },
 	},
 
 	-- tenebris prime
@@ -470,57 +480,57 @@ constants.science_overrides = {
 
 	-- voidcraft
 	["void-science-pack"] = {
-		{ type = { "tool", "recipe" }, icon = "icons/skyblock.png" },
+		{ type = { "tool", "recipe" }, icon = "icons/voidcraft/skyblock.png" },
 		{
 			type = "recipe",
 			name = "s6xvc-void-science-pack",
-			icons = { "icons/skyblock.png" },
+			icons = { "icons/voidcraft/skyblock.png" },
 		},
 		{
 			type = "technology",
 			name = "s6x-void-science-pack",
-			icon = "technology/skyblock.png",
+			icon = "technology/voidcraft/skyblock.png",
 		},
 		{
 			type = "technology",
 			name = "s6x-void-science-pack-vc",
-			icon = "technology/skyblock-vc.png",
+			icon = "technology/voidcraft/skyblock-vc.png",
 		},
 	},
 	["esoteric-science-pack"] = {
-		{ type = { "tool", "recipe" }, icon = "icons/coobie.png" },
+		{ type = { "tool", "recipe" }, icon = "icons/voidcraft/coobie.png" },
 		{
 			type = "recipe",
 			name = "s6xvc-esoteric-science-pack",
-			icons = { "icons/coobie.png" },
+			icons = { "icons/voidcraft/coobie.png" },
 		},
 		{
 			type = "technology",
 			name = "s6x-esoteric-science-pack",
-			icon = "technology/coobie.png",
+			icon = "technology/voidcraft/coobie.png",
 		},
 		{
 			type = "technology",
 			name = "s6x-esoteric-science-pack-vc",
-			icon = "technology/coobie-vc.png",
+			icon = "technology/voidcraft/coobie-vc.png",
 		},
 	},
 	["celestial-science-pack"] = {
-		{ type = { "tool", "recipe" }, icon = "icons/marisa.png" },
+		{ type = { "tool", "recipe" }, icon = "icons/voidcraft/marisa.png" },
 		{
 			type = "recipe",
 			name = "s6xvc-celestial-science-pack",
-			icons = { "icons/marisa.png" },
+			icons = { "icons/voidcraft/marisa.png" },
 		},
 		{
 			type = "technology",
 			name = "s6x-celestial-science-pack",
-			icon = "technology/marisa.png",
+			icon = "technology/voidcraft/marisa.png",
 		},
 		{
 			type = "technology",
 			name = "s6x-celestial-science-pack-vc",
-			icon = "technology/marisa-vc.png",
+			icon = "technology/voidcraft/marisa-vc.png",
 		},
 	},
 }
