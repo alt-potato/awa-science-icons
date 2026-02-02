@@ -1,1 +1,1 @@
-require("constants").apply_icon({ "recipe", "technology" })
+require("lib.icon-manipulation").apply_icon({ "recipe", "technology" })
