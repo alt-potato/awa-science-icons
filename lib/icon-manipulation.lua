@@ -23,12 +23,23 @@ local lib = {}
 ---@field draw_background boolean?
 ---@field floating boolean?
 
+---@class Sprite
+---@field layers Sprite[]? -- i love recursion wahoo
+---@field filename string?
+---@field size number?
+---@field scale number?
+---@field draw_as_shadow boolean?
+---@field draw_as_glow boolean?
+---@field draw_as_light boolean?
+---@field occludes_light boolean?
+
 ---@class IconOverrideEntry
 ---@field type IconOverrideType|IconOverrideType[]? -- Type of prototype to override, defaults to constants.default_options
 ---@field name string? -- Name of the entity to override, if different from the key in science_overrides
 ---@field icon string? -- Path to a single icon graphic (eg., "icons/icon.png")
 ---@field icons (string|IconData)[]? -- Array of paths to icon graphics for layered icons (or empty string to preserve old icons)
 ---@field icon_size number? -- Optional icon size, overrides default for icon (e.g., 64)
+---@field pictures Sprite[]?
 ---@field use_prefixes boolean? -- Whether to extrapolate image path from type_val and given base
 
 local default_data = {
@@ -95,6 +106,11 @@ lib.overwrite_icons = function(key, override_type, override)
 		target[key].icon_size = override.icon_size or default.icon_size
 	else
 		log("WARNING: No icons found for override " .. key .. "[" .. target .. "].")
+	end
+
+	if override.pictures then
+		-- i'm gonna be real honest with you ok i do not have the mental fortitude to make a parser for this
+		target[key].pictures = override.pictures
 	end
 end
 
