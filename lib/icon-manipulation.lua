@@ -41,7 +41,7 @@ local lib = {}
 ---@field icon_size number? -- Optional icon size, overrides default for icon (e.g., 64)
 ---@field pictures Sprite[]?
 ---@field use_prefixes boolean? -- Whether to extrapolate image path from type_val and given base
-
+---@field priority number? -- Priority of the override, defaults to 0 (bigger is higher priority)
 local default_data = {
 	["tool"] = { graphics_path = "icons/", icon_size = 64 },
 	["item"] = { graphics_path = "icons/", icon_size = 64 },
@@ -127,6 +127,9 @@ lib.apply_icon = function(types_to_override, overrides)
 		overrides = constants.science_overrides
 	end
 
+	---@type table<integer, {key: string, type_val: IconOverrideType, override: IconOverrideEntry}[]>
+	local delayed = {}
+
 	-- for each specified prototype in override table...
 	for key, prototype in pairs(overrides) do
 		-- if shorthand, set to default with extrapolated icons
@@ -158,7 +161,17 @@ lib.apply_icon = function(types_to_override, overrides)
 				assert(type(type_val) == "string")
 				-- only set if specified in types_to_override
 				if enable_map[type_val] == 1 then
-					enable_map[type_val] = 2
+					if override.priority then
+						if not delayed[override.priority] then
+							delayed[override.priority] = {}
+						end
+						table.insert(
+							delayed[override.priority],
+							{ key = key, type_val = type_val, override = override }
+						)
+					else
+						enable_map[type_val] = 2
+					end
 				end
 			end
 
@@ -168,6 +181,13 @@ lib.apply_icon = function(types_to_override, overrides)
 					lib.overwrite_icons(key, type_val, override)
 				end
 			end
+		end
+	end
+
+	-- execute delayed
+	for _, priority_overrides in pairs(delayed) do
+		for _, override in pairs(priority_overrides) do
+			lib.overwrite_icons(override.key, override.type_val, override.override)
 		end
 	end
 end

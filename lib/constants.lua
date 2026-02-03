@@ -6,6 +6,24 @@ constants.graphics_path = "__" .. constants.mod_name .. "__/graphics/"
 ---@type IconOverrideType[]
 constants.default_options = { "tool", "recipe", "technology" }
 
+local krastorio2_pictures = function(filename)
+	return {
+		layers = {
+			{
+				filename = constants.graphics_path .. "icons/krastorio2/" .. filename,
+				size = 64,
+				scale = 0.5,
+			},
+			{
+				filename = constants.graphics_path .. "icons/krastorio2/floppy-light.png",
+				size = 64,
+				scale = 0.5,
+				draw_as_light = true,
+			},
+		},
+	}
+end
+
 -- is this the best way to do this? no. does it work? probably.
 --
 -- default action:
@@ -223,6 +241,20 @@ constants.science_overrides = {
 			icons = { "", "icons/mc-chicken.png" },
 		},
 	},
+
+	-- krastorio2 (spaced out)
+	["kr-blank-tech-card"] = {
+		{
+			type = { "item", "recipe" },
+			icon = "icons/krastorio2/floppy-blank.png",
+			pictures = krastorio2_pictures("floppy-blank.png"),
+		},
+		{
+			type = "technology",
+			icon = "technology/krastorio2/floppy-blank.png",
+		},
+	},
+	-- TODO
 
 	-- maraxys
 	["hydraulic-science-pack"] = "vaporeon.png",
