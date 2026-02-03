@@ -24,18 +24,18 @@ local lib = {}
 ---@field floating boolean?
 
 ---@class IconOverrideEntry
----@field type IconOverrideType[] -- Type of prototype to override
+---@field type IconOverrideType|IconOverrideType[]? -- Type of prototype to override, defaults to constants.default_options
 ---@field name string? -- Name of the entity to override, if different from the key in science_overrides
 ---@field icon string? -- Path to a single icon graphic (eg., "icons/icon.png")
----@field icons IconData[]? -- Array of paths to icon graphics for layered icons (or empty string to preserve old icons)
+---@field icons (string|IconData)[]? -- Array of paths to icon graphics for layered icons (or empty string to preserve old icons)
 ---@field icon_size number? -- Optional icon size, overrides default for icon (e.g., 64)
 ---@field use_prefixes boolean? -- Whether to extrapolate image path from type_val and given base
 
 local default_data = {
-	["tool"] = { target = data.raw.tool, graphics_path = "icons/", icon_size = 64 },
-	["item"] = { target = data.raw.item, graphics_path = "icons/", icon_size = 64 },
-	["recipe"] = { target = data.raw.recipe, graphics_path = "icons/", icon_size = 64 },
-	["technology"] = { target = data.raw.technology, graphics_path = "technology/", icon_size = 256 },
+	["tool"] = { graphics_path = "icons/", icon_size = 64 },
+	["item"] = { graphics_path = "icons/", icon_size = 64 },
+	["recipe"] = { graphics_path = "icons/", icon_size = 64 },
+	["technology"] = { graphics_path = "technology/", icon_size = 256 },
 }
 
 ---Overwrite the icons for a specific key in the target.
@@ -44,7 +44,7 @@ local default_data = {
 ---@param override IconOverrideEntry
 lib.overwrite_icons = function(key, override_type, override)
 	local default = default_data[override_type]
-	local target = default.target
+	local target = data.raw[override_type]
 	key = override.name or key
 
 	local graphics_path = constants.graphics_path
@@ -53,7 +53,8 @@ lib.overwrite_icons = function(key, override_type, override)
 	end
 
 	if not target[key] then
-		log("Key " .. key .. " for target " .. override_type .. " does not exist.")
+		log(override_type .. '["' .. key .. '"] does not exist.')
+		return
 	end
 
 	if override.icons then
@@ -66,16 +67,29 @@ lib.overwrite_icons = function(key, override_type, override)
 			if target.icon then
 				table.insert(target[key].icons, { icon = target.icon })
 			end
-		end
 
-		for i, icon in ipairs(override.icons) do
-			-- skip if empty (preserves old icons)
-			if override.icons[i] and override.icons[i] ~= "" then
-				target[key].icons[i].icon = graphics_path .. icon
-				target[key].icons[i].icon_size = override.icon_size or default.icon_size
+			-- overwrite with new icons
+			for i, icon in pairs(override.icons) do
+				-- shorthand
+				if type(icon) == "string" then
+					icon = { icon = icon } ---@type IconData
+				end
+
+				-- skip if empty (preserves old icons)
+				if override.icons[i] and override.icons[i] ~= "" then
+					target[key].icons[i].icon = graphics_path .. icon.icon
+					target[key].icons[i].icon_size = icon.icon_size or override.icon_size or default.icon_size
+					target[key].icons[i].tint = icon.tint
+					target[key].icons[i].shift = icon.shift
+					target[key].icons[i].scale = icon.scale
+					target[key].icons[i].draw_background = icon.draw_background
+					target[key].icons[i].floating = icon.floating
+				end
 			end
 		end
 	elseif override.icon then
+		assert(type(override.icon) == "string")
+
 		-- single icon
 		target[key].icon = graphics_path .. override.icon
 		target[key].icon_size = override.icon_size or default.icon_size
@@ -86,8 +100,8 @@ end
 
 --- Applies an icon override to the specified science pack(s)
 --- Overengineered? I 'ardly know 'er!
---- @param types_to_override IconOverrideType|IconOverrideType[] -- unused?
---- @param overrides table?
+--- @param types_to_override IconOverrideType|IconOverrideType[]
+--- @param overrides? table<string, string|IconOverrideEntry[]>
 lib.apply_icon = function(types_to_override, overrides)
 	if type(types_to_override) == "string" then
 		types_to_override = { types_to_override } ---@type IconOverrideType[] -- trust me bro
@@ -99,24 +113,32 @@ lib.apply_icon = function(types_to_override, overrides)
 
 	-- for each specified prototype in override table...
 	for key, prototype in pairs(overrides) do
-		-- if shorthand, set to default with extrapolated icon
+		-- if shorthand, set to default with extrapolated icons
 		if type(prototype) == "string" then
 			prototype = { { type = constants.default_options, icon = prototype, use_prefixes = true } } ---@type IconOverrideEntry[]
 		end
 		assert(type(prototype) == "table")
 
 		-- for each override specified for this prototype...
-		for i, override in ipairs(prototype) do
-			assert(override.type, "Override for " .. key .. "(" .. i .. ") is missing type!")
+		for _, override in ipairs(prototype) do
+			-- if no type specified, use default
+			local override_types = override.type or constants.default_options
+			if not override.type then
+				override.use_prefixes = true
+			end
 
-			local enable_map = {} ---@type table<IconOverrideType, number>
+			-- normalize override.type to always be an array
+			if type(override_types) == "string" then
+				override_types = { override_types } ---@type IconOverrideType[]
+			end
 
 			-- mark which types should be overridden
+			local enable_map = {} ---@type table<IconOverrideType, number>
 			for _, type_val in pairs(types_to_override) do
 				enable_map[type_val] = 1
 			end
 
-			for _, type_val in pairs(override.type) do
+			for _, type_val in pairs(override_types) do
 				assert(type(type_val) == "string")
 				-- only set if specified in types_to_override
 				if enable_map[type_val] == 1 then

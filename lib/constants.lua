@@ -4,8 +4,7 @@ constants.mod_name = "awa-science-icons"
 constants.graphics_path = "__" .. constants.mod_name .. "__/graphics/"
 
 ---@type IconOverrideType[]
-local default = { "tool", "recipe", "technology" }
-constants.default_options = default
+constants.default_options = { "tool", "recipe", "technology" }
 
 -- is this the best way to do this? no. does it work? probably.
 --
@@ -16,7 +15,7 @@ constants.default_options = default
 constants.science_overrides = {
 	-- base
 	["automation-science-pack"] = {
-		{ type = default, icon = "base/autism.png" },
+		{ icon = "base/autism.png" },
 
 		-- cubium
 		{
@@ -26,7 +25,7 @@ constants.science_overrides = {
 		},
 	},
 	["logistic-science-pack"] = {
-		{ type = default, icon = "base/glorp.png" },
+		{ icon = "base/glorp.png" },
 
 		-- cubium
 		{
@@ -36,7 +35,7 @@ constants.science_overrides = {
 		},
 	},
 	["military-science-pack"] = {
-		{ type = default, icon = "base/miku-pipe.png" },
+		{ icon = "base/miku-pipe.png" },
 
 		-- cubium
 		{
@@ -46,7 +45,7 @@ constants.science_overrides = {
 		},
 	},
 	["chemical-science-pack"] = {
-		{ type = default, icon = "base/bridget.png" },
+		{ icon = "base/bridget.png" },
 
 		-- cubium
 		{
@@ -56,7 +55,7 @@ constants.science_overrides = {
 		},
 	},
 	["production-science-pack"] = {
-		{ type = default, icon = "base/heavyblade.png" },
+		{ icon = "base/heavyblade.png" },
 
 		-- cubium
 		{
@@ -66,7 +65,7 @@ constants.science_overrides = {
 		},
 	},
 	["utility-science-pack"] = {
-		{ type = default, icon = "base/donqui.png" },
+		{ icon = "base/donqui.png" },
 
 		-- cubium
 		{
@@ -88,7 +87,7 @@ constants.science_overrides = {
 		},
 	},
 	["space-science-pack"] = {
-		{ type = default, icon = "base/girlmilk.png" },
+		{ icon = "base/girlmilk.png" },
 
 		-- muluna
 		{
@@ -112,7 +111,7 @@ constants.science_overrides = {
 
 	-- space age
 	["metallurgic-science-pack"] = {
-		{ type = default, icon = "space-age/vulpix.png" },
+		{ icon = "space-age/vulpix.png" },
 
 		-- age of production
 		{
@@ -134,7 +133,7 @@ constants.science_overrides = {
 		},
 	},
 	["electromagnetic-science-pack"] = {
-		{ type = default, icon = "space-age/niko.png" },
+		{ icon = "space-age/niko.png" },
 
 		-- age of production
 		{
@@ -151,7 +150,7 @@ constants.science_overrides = {
 		},
 	},
 	["agricultural-science-pack"] = {
-		{ type = default, icon = "space-age/bungus.png" },
+		{ icon = "space-age/bungus.png" },
 
 		-- age of production
 		{
@@ -168,7 +167,7 @@ constants.science_overrides = {
 		},
 	},
 	["cryogenic-science-pack"] = {
-		{ type = default, icon = "space-age/cirno.png" },
+		{ icon = "space-age/cirno.png" },
 
 		-- age of production
 		{
@@ -185,7 +184,7 @@ constants.science_overrides = {
 		},
 	},
 	["promethium-science-pack"] = {
-		{ type = default, icon = "space-age/estradiol.png" },
+		{ icon = "space-age/estradiol.png" },
 
 		-- cubium
 		{
@@ -215,7 +214,7 @@ constants.science_overrides = {
 
 	-- corrundum
 	["electrochemical-science-pack"] = {
-		{ type = default, icon = "mc-chicken.png" },
+		{ icon = "mc-chicken.png" },
 
 		-- cubium
 		{
@@ -231,7 +230,7 @@ constants.science_overrides = {
 	-- metal and stars
 	["nanite-science-pack"] = "metal-and-stars/argemia.png",
 	["anomaly-science-pack"] = {
-		{ type = default, icon = "metal-and-stars/amon.png" },
+		{ icon = "metal-and-stars/amon.png" },
 		{
 			type = "recipe",
 			name = "catalyzed-anomaly-science-pack",
@@ -364,7 +363,7 @@ constants.science_overrides = {
 		{ type = { "tool", "recipe" }, icon = "icons/rubia/borgar.png" },
 	},
 	["rubia-biofusion-science-pack"] = {
-		{ type = default, icon = "rubia/poo.png" },
+		{ icon = "rubia/poo.png" },
 		{
 			type = "technology",
 			name = "rubia-biofusion-science-pack",
