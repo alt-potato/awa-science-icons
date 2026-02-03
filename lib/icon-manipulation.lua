@@ -42,6 +42,8 @@ local lib = {}
 ---@field pictures Sprite[]?
 ---@field use_prefixes boolean? -- Whether to extrapolate image path from type_val and given base
 ---@field priority number? -- Priority of the override, defaults to 0 (bigger is higher priority)
+---@field mods string[]? -- If included, will only use the override if the specified mods are enabled
+
 local default_data = {
 	["tool"] = { graphics_path = "icons/", icon_size = 64 },
 	["item"] = { graphics_path = "icons/", icon_size = 64 },
@@ -54,6 +56,21 @@ local default_data = {
 ---@param override_type IconOverrideType
 ---@param override IconOverrideEntry
 lib.overwrite_icons = function(key, override_type, override)
+	-- skip if specified mods are not enabled
+	if override.mods and override.mods ~= {} then
+		local skip = true
+		for _, mod_name in pairs(override.mods) do
+			if mods[mod_name] then
+				skip = false
+				break
+			end
+		end
+		if skip then
+			log(override_type .. '["' .. key .. '"] skipped, needed mods are not enabled.')
+			return
+		end
+	end
+
 	local default = default_data[override_type]
 	local target = data.raw[override_type]
 	key = override.name or key
@@ -108,7 +125,7 @@ lib.overwrite_icons = function(key, override_type, override)
 		log("WARNING: No icons found for override " .. key .. "[" .. target .. "].")
 	end
 
-	if override.pictures then
+	if override.pictures and override_type ~= "technology" then
 		-- i'm gonna be real honest with you ok i do not have the mental fortitude to make a parser for this
 		target[key].pictures = override.pictures
 	end

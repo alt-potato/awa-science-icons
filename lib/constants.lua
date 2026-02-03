@@ -41,6 +41,15 @@ constants.science_overrides = {
 			name = "automation-science-pack-cubic",
 			icons = { "", "icons/base/autism.png" },
 		},
+
+		-- krastorio2
+		{
+			type = { "tool", "recipe" },
+			icon = "icons/krastorio2/floppy-autism.png",
+			pictures = krastorio2_pictures("floppy-autism.png"),
+			priority = 1,
+			mods = { "Krastorio2", "Krastorio2-spaced-out" },
+		},
 	},
 	["logistic-science-pack"] = {
 		{ icon = "base/glorp.png" },
@@ -50,6 +59,15 @@ constants.science_overrides = {
 			type = "recipe",
 			name = "logistic-science-pack-cubic",
 			icons = { "", "icons/base/glorp.png" },
+		},
+
+		-- krastorio2
+		{
+			mods = { "Krastorio2", "Krastorio2-spaced-out" },
+			priority = 1,
+			type = { "tool", "recipe" },
+			icon = "icons/krastorio2/floppy-glorp.png",
+			pictures = krastorio2_pictures("floppy-glorp.png"),
 		},
 	},
 	["military-science-pack"] = {
@@ -61,6 +79,15 @@ constants.science_overrides = {
 			name = "military-science-pack-cubic",
 			icons = { "", "icons/base/miku-pipe.png" },
 		},
+
+		-- krastorio2
+		{
+			mods = { "Krastorio2", "Krastorio2-spaced-out" },
+			priority = 1,
+			type = { "tool", "recipe" },
+			icon = "icons/krastorio2/floppy-miku-pipe.png",
+			pictures = krastorio2_pictures("floppy-miku-pipe.png"),
+		},
 	},
 	["chemical-science-pack"] = {
 		{ icon = "base/bridget.png" },
@@ -70,6 +97,15 @@ constants.science_overrides = {
 			type = "recipe",
 			name = "chemical-science-pack-cubic",
 			icons = { "", "icons/base/bridget.png" },
+		},
+
+		-- krastorio2
+		{
+			mods = { "Krastorio2", "Krastorio2-spaced-out" },
+			priority = 1,
+			type = { "tool", "recipe" },
+			icon = "icons/krastorio2/floppy-bridget.png",
+			pictures = krastorio2_pictures("floppy-bridget.png"),
 		},
 	},
 	["production-science-pack"] = {
@@ -81,6 +117,15 @@ constants.science_overrides = {
 			name = "production-science-pack-cubic",
 			icons = { "", "icons/base/heavyblade.png" },
 		},
+
+		-- krastorio2
+		{
+			mods = { "Krastorio2", "Krastorio2-spaced-out" },
+			priority = 1,
+			type = { "tool", "recipe" },
+			icon = "icons/krastorio2/floppy-heavyblade.png",
+			pictures = krastorio2_pictures("floppy-heavyblade.png"),
+		},
 	},
 	["utility-science-pack"] = {
 		{ icon = "base/donqui.png" },
@@ -90,6 +135,15 @@ constants.science_overrides = {
 			type = "recipe",
 			name = "utility-science-pack-cubic",
 			icons = { "", "icons/base/donqui.png" },
+		},
+
+		-- krastorio2
+		{
+			mods = { "Krastorio2", "Krastorio2-spaced-out" },
+			priority = 1,
+			type = { "tool", "recipe" },
+			icon = "icons/krastorio2/floppy-donqui.png",
+			pictures = krastorio2_pictures("floppy-donqui.png"),
 		},
 
 		-- rubia
@@ -107,13 +161,6 @@ constants.science_overrides = {
 	["space-science-pack"] = {
 		{ icon = "base/girlmilk.png" },
 
-		-- muluna
-		{
-			type = "technology",
-			name = "advanced-space-science-pack",
-			icons = { "technology/base/girlmilk.png" },
-		},
-
 		-- cerys
 		{
 			type = "recipe",
@@ -124,6 +171,22 @@ constants.science_overrides = {
 			type = "technology",
 			name = "cerys-space-science-pack-from-methane-ice",
 			icon = "technology/methane-girlmilk.png",
+		},
+
+		-- krastorio2
+		{
+			mods = { "Krastorio2", "Krastorio2-spaced-out" },
+			priority = 1,
+			type = { "tool", "recipe" },
+			icon = "icons/krastorio2/floppy-girlmilk.png",
+			pictures = krastorio2_pictures("floppy-girlmilk.png"),
+		},
+
+		-- muluna
+		{
+			type = "technology",
+			name = "advanced-space-science-pack",
+			icons = { "technology/base/girlmilk.png" },
 		},
 	},
 
@@ -248,10 +311,6 @@ constants.science_overrides = {
 			type = { "item", "recipe" },
 			icon = "icons/krastorio2/floppy-blank.png",
 			pictures = krastorio2_pictures("floppy-blank.png"),
-		},
-		{
-			type = "technology",
-			icon = "technology/krastorio2/floppy-blank.png",
 		},
 	},
 	-- TODO
