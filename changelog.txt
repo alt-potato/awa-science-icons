@@ -3,6 +3,7 @@ Version: 1.1.1
 Date: 2026-02-04
   Changes:
     - Hotfix to fix bungus/wungus path
+    - Add Outer Rim to mods to override in data-updates
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.0
 Date: 2026-02-03
