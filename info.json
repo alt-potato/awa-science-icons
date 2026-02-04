@@ -1,6 +1,6 @@
 {
   "name": "awa-science-icons",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "title": "Awa Science Icons",
   "author": "meconeko",
   "description": "Replaces science icons from the base game and other mods with various brainrot.",
@@ -17,6 +17,7 @@
     "? Krastorio2-spaced-out",
     "? maraxsis",
     "? metal-and-stars",
+    "(?) outer-rim",
     "? Paracelsin",
     "? planet-muluna",
     "? pyalienlife",
@@ -26,8 +27,7 @@
     "? skewer_shattered_planet",
     "? tenebris-prime",
     "? Voidcraft",
-    "? VoidProcessing",
-    "(?) outer-rim"
+    "? VoidProcessing"
   ],
   "factorio_version": "2.0"
 }

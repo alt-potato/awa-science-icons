@@ -1,13 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2026-02-03
+  Changes:
+    - Added Krastorio2/Krastorio2 Spaced Out support
+---------------------------------------------------------------------------------------------------
 Version: 1.0.7
 Date: 2026-01-29
   Changes:
-    - Fix locale for precise electronic science pack and electrochemical science pack (cubic recipe)
+    - Fixed locale for precise electronic science pack and electrochemical science pack (cubic recipe)
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.6
 Date: 2026-01-28
   Changes:
-    - Add graphics and locale for metal-and-stars quantum science pack intermediaries
+    - Added graphics and locale for metal-and-stars quantum science pack intermediaries
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.5
 Date: 2026-01-21
