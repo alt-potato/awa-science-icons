@@ -290,14 +290,14 @@ constants.science_overrides = {
 		{
 			type = "recipe",
 			name = "aop-hybridation-specialized-agricultural-science-pack",
-			icon = "icons/space-age/wungus.png",
+			icon = "icons/wungus.png",
 		},
 
 		-- cubium
 		{
 			type = "recipe",
 			name = "agricultural-science-pack-cubic",
-			icons = { "", "icons/bungus.png" },
+			icons = { "", "icons/space-age/bungus.png" },
 		},
 
 		-- krastorio2 spaced out
