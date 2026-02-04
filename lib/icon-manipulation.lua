@@ -134,13 +134,23 @@ end
 --- Overengineered? I 'ardly know 'er!
 --- @param types_to_override IconOverrideType|IconOverrideType[]
 --- @param overrides? table<string, string|IconOverrideEntry[]>
-lib.apply_icon = function(types_to_override, overrides)
+--- @param only_apply? string[]
+lib.apply_icon = function(types_to_override, overrides, only_apply)
 	if type(types_to_override) == "string" then
 		types_to_override = { types_to_override } ---@type IconOverrideType[] -- trust me bro
 	end
 
 	if not overrides then
 		overrides = constants.science_overrides
+	end
+
+	-- if only_apply is specified, only override the specified mods
+	local to_override = overrides
+	if only_apply and only_apply ~= {} then
+		to_override = {}
+		for _, mod_name in pairs(only_apply) do
+			to_override[mod_name] = overrides[mod_name]
+		end
 	end
 
 	---@type table<integer, {key: string, type_val: IconOverrideType, override: IconOverrideEntry}[]>

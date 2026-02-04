@@ -406,6 +406,30 @@ constants.science_overrides = {
 		},
 	},
 
+	-- gregtorio
+	["umv-science-pack"] = "gregtorio/precision-mechanism.png",
+	["uxv-science-pack"] = {
+		{
+			type = { "tool", "recipe" },
+			icon = "icons/gregtorio/utsuho-hm.png",
+		},
+		{
+			type = "technology",
+			icon = "technology/gregtorio/utsuho-sa.png",
+		},
+	},
+	["max-science-pack"] = {
+		{
+			type = { "tool", "recipe" },
+			icon = "icons/gregtorio/grass-block.png",
+		},
+		{
+			type = "technology",
+			name = "victory",
+			icon = "technology/gregtorio/touch-grass.png",
+		},
+	},
+
 	-- krastorio2 spaced out
 	["kr-blank-tech-card"] = {
 		{
@@ -465,7 +489,7 @@ constants.science_overrides = {
 		{
 			type = "technology",
 			icon = "technology/krastorio2/floppy-jelly-straight.png",
-		}
+		},
 	},
 	["kr-matter-research-data"] = {
 		{

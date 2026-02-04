@@ -1,6 +1,22 @@
-if mods["Krastorio2"] or mods["Krastorio2-spaced-out"] or mods["outer-rim"] then
-	-- fighting Krastorio2 et al. for modifications to the base sciences :|
-	require("lib.icon-manipulation").apply_icon({ "tool" })
+-- always override base/space age sciences
+-- fighting Krastorio2 et al. for modifications to the base sciences :|
+if mods["base"] then
+	require("lib.icon-manipulation").apply_icon({ "tool" }, nil, {
+		"automation-science-pack",
+		"logistic-science-pack",
+		"military-science-pack",
+		"chemical-science-pack",
+		"production-science-pack",
+		"utility-science-pack",
+		"space-science-pack",
+	})
 end
-
-require("lib.icon-manipulation").apply_icon({ "recipe", "technology" })
+if mods["space-age"] then
+	require("lib.icon-manipulation").apply_icon({ "tool" }, nil, {
+		"metallurgic-science-pack",
+		"electromagnetic-science-pack",
+		"agricultural-science-pack",
+		"cryogenic-science-pack",
+		"promethium-science-pack",
+	})
+end

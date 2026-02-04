@@ -1,6 +1,6 @@
 {
   "name": "awa-science-icons",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "title": "Awa Science Icons",
   "author": "meconeko",
   "description": "Replaces science icons from the base game and other mods with various brainrot.",
@@ -13,6 +13,7 @@
     "? corrundum",
     "? cubium",
     "? Factorio-Tiberium",
+    "? Gregtorio",
     "(?) Krastorio2",
     "? Krastorio2-spaced-out",
     "? maraxsis",
