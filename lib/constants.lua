@@ -126,6 +126,13 @@ constants.science_overrides = {
 			icon = "icons/krastorio2/floppy-heavyblade.png",
 			pictures = krastorio2_pictures("floppy-heavyblade.png"),
 		},
+		{
+			mods = { "Krastorio2", "Krastorio2-spaced-out" },
+			priority = 1,
+			type = { "recipe" },
+			name = "production-science-pack-cooling",
+			icons = { "icons/krastorio2/floppy-heavyblade.png" },
+		},
 	},
 	["utility-science-pack"] = {
 		{ icon = "base/donqui.png" },
@@ -144,6 +151,13 @@ constants.science_overrides = {
 			type = { "tool", "recipe" },
 			icon = "icons/krastorio2/floppy-donqui.png",
 			pictures = krastorio2_pictures("floppy-donqui.png"),
+		},
+		{
+			mods = { "Krastorio2", "Krastorio2-spaced-out" },
+			priority = 1,
+			type = { "recipe" },
+			name = "utility-science-pack-cooling",
+			icons = { "icons/krastorio2/floppy-donqui.png" },
 		},
 
 		-- rubia
@@ -181,6 +195,13 @@ constants.science_overrides = {
 			icon = "icons/krastorio2/floppy-girlmilk.png",
 			pictures = krastorio2_pictures("floppy-girlmilk.png"),
 		},
+		{
+			mods = { "Krastorio2", "Krastorio2-spaced-out" },
+			priority = 1,
+			type = { "recipe" },
+			name = "space-science-pack-cooling",
+			icons = { "icons/krastorio2/floppy-girlmilk.png" },
+		},
 
 		-- muluna
 		{
@@ -212,6 +233,22 @@ constants.science_overrides = {
 			name = "metallurgic-science-pack-cubic",
 			icons = { "", "icons/space-age/vulpix.png" },
 		},
+
+		-- krastorio2 spaced out
+		{
+			mods = { "Krastorio2-spaced-out" },
+			priority = 1,
+			type = { "tool", "recipe" },
+			icon = "icons/krastorio2/floppy-vulpix.png",
+			pictures = krastorio2_pictures("floppy-vulpix.png"),
+		},
+		{
+			mods = { "Krastorio2-spaced-out" },
+			priority = 1,
+			type = { "recipe" },
+			name = "metallurgic-science-pack-cooling",
+			icons = { "icons/krastorio2/floppy-vulpix.png" },
+		},
 	},
 	["electromagnetic-science-pack"] = {
 		{ icon = "space-age/niko.png" },
@@ -228,6 +265,22 @@ constants.science_overrides = {
 			type = "recipe",
 			name = "electromagnetic-science-pack-cubic",
 			icons = { "", "icons/space-age/niko.png" },
+		},
+
+		-- krastorio2 spaced out
+		{
+			mods = { "Krastorio2-spaced-out" },
+			priority = 1,
+			type = { "tool", "recipe" },
+			icon = "icons/krastorio2/floppy-niko.png",
+			pictures = krastorio2_pictures("floppy-niko.png"),
+		},
+		{
+			mods = { "Krastorio2-spaced-out" },
+			priority = 1,
+			type = { "recipe" },
+			name = "electromagnetic-science-pack-cooling",
+			icons = { "icons/krastorio2/floppy-niko.png" },
 		},
 	},
 	["agricultural-science-pack"] = {
@@ -246,6 +299,22 @@ constants.science_overrides = {
 			name = "agricultural-science-pack-cubic",
 			icons = { "", "icons/bungus.png" },
 		},
+
+		-- krastorio2 spaced out
+		{
+			mods = { "Krastorio2-spaced-out" },
+			priority = 1,
+			type = { "tool", "recipe" },
+			icon = "icons/krastorio2/floppy-bungus.png",
+			pictures = krastorio2_pictures("floppy-bungus.png"),
+		},
+		{
+			mods = { "Krastorio2-spaced-out" },
+			priority = 1,
+			type = { "recipe" },
+			name = "agricultural-science-pack-cooling",
+			icons = { "icons/krastorio2/floppy-bungus.png" },
+		},
 	},
 	["cryogenic-science-pack"] = {
 		{ icon = "space-age/cirno.png" },
@@ -263,6 +332,22 @@ constants.science_overrides = {
 			name = "cryogenic-science-pack-cubic",
 			icons = { "", "icons/space-age/cirno.png" },
 		},
+
+		-- krastorio2 spaced out
+		{
+			mods = { "Krastorio2-spaced-out" },
+			priority = 1,
+			type = { "tool", "recipe" },
+			icon = "icons/krastorio2/floppy-cirno.png",
+			pictures = krastorio2_pictures("floppy-cirno.png"),
+		},
+		{
+			mods = { "Krastorio2-spaced-out" },
+			priority = 1,
+			type = { "recipe" },
+			name = "cryogenic-science-pack-cooling",
+			icons = { "icons/krastorio2/floppy-cirno.png" },
+		},
 	},
 	["promethium-science-pack"] = {
 		{ icon = "space-age/estradiol.png" },
@@ -272,6 +357,22 @@ constants.science_overrides = {
 			type = "recipe",
 			name = "promethium-science-pack-cubic",
 			icons = { "", "icons/space-age/estradiol.png" },
+		},
+
+		-- krastorio2 spaced out
+		{
+			mods = { "Krastorio2-spaced-out" },
+			priority = 1,
+			type = { "tool", "recipe" },
+			icon = "icons/krastorio2/floppy-estradiol.png",
+			pictures = krastorio2_pictures("floppy-estradiol.png"),
+		},
+		{
+			mods = { "Krastorio2-spaced-out" },
+			priority = 1,
+			type = { "recipe" },
+			name = "promethium-science-pack-cooling",
+			icons = { "icons/krastorio2/floppy-estradiol.png" },
 		},
 
 		-- rubia
@@ -305,7 +406,7 @@ constants.science_overrides = {
 		},
 	},
 
-	-- krastorio2 (spaced out)
+	-- krastorio2 spaced out
 	["kr-blank-tech-card"] = {
 		{
 			type = { "item", "recipe" },
@@ -313,7 +414,87 @@ constants.science_overrides = {
 			pictures = krastorio2_pictures("floppy-blank.png"),
 		},
 	},
-	-- TODO
+	["kr-biter-research-data"] = {
+		{
+			type = { "item", "recipe" },
+			icon = "icons/krastorio2/tape-gregor.png",
+		},
+	},
+	["kr-space-research-data"] = {
+		{
+			type = { "item", "recipe" },
+			icon = "icons/krastorio2/tape-girlmilk.png",
+		},
+	},
+	["kr-metallurgic-research-data"] = {
+		{
+			type = { "item", "recipe" },
+			icon = "icons/krastorio2/tape-fox.png",
+		},
+	},
+	["kr-agricultural-research-data"] = {
+		{
+			type = { "item", "recipe" },
+			icon = "icons/krastorio2/tape-healing-chest.png",
+		},
+	},
+	["kr-electromagnetic-research-data"] = {
+		{
+			type = { "item", "recipe" },
+			icon = "icons/krastorio2/tape-niko.png",
+		},
+	},
+	["kr-cryogenic-research-data"] = {
+		{
+			type = { "item", "recipe" },
+			icon = "icons/krastorio2/tape-cirno.png",
+		},
+	},
+	["kr-promethium-research-data"] = {
+		{
+			type = { "item", "recipe" },
+			icon = "icons/krastorio2/tape-estradiol.png",
+		},
+	},
+	["kr-advanced-tech-card"] = {
+		{
+			type = { "tool", "recipe" },
+			icon = "icons/krastorio2/floppy-jelly.png",
+			pictures = krastorio2_pictures("floppy-jelly.png"),
+		},
+		{
+			type = "technology",
+			icon = "technology/krastorio2/floppy-jelly-straight.png",
+		}
+	},
+	["kr-matter-research-data"] = {
+		{
+			type = { "item", "recipe" },
+			icon = "icons/krastorio2/tape-fma.png",
+		},
+	},
+	["kr-matter-tech-card"] = {
+		{
+			type = { "tool", "recipe" },
+			icon = "icons/krastorio2/floppy-fma.png",
+			pictures = krastorio2_pictures("floppy-fma.png"),
+		},
+		{
+			type = "technology",
+			icon = "technology/krastorio2/floppy-fma-straight.png",
+		},
+	},
+	["kr-singularity-tech-card"] = {
+		{
+			type = { "tool", "recipe" },
+			icon = "icons/krastorio2/floppy-end.png",
+			pictures = krastorio2_pictures("floppy-end.png"),
+		},
+		{
+			type = "technology",
+			icon = "technology/krastorio2/floppy-end-straight.png",
+		},
+	},
 
 	-- maraxys
 	["hydraulic-science-pack"] = "vaporeon.png",

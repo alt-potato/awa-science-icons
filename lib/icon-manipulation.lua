@@ -86,7 +86,6 @@ lib.overwrite_icons = function(key, override_type, override)
 	end
 
 	if override.icons then
-		-- icons array (multiple icons overlaid on each other)
 		if not target[key].icons then
 			-- create if does not exist
 			target[key].icons = {}
@@ -95,24 +94,24 @@ lib.overwrite_icons = function(key, override_type, override)
 			if target.icon then
 				table.insert(target[key].icons, { icon = target.icon })
 			end
+		end
 
-			-- overwrite with new icons
-			for i, icon in pairs(override.icons) do
-				-- shorthand
-				if type(icon) == "string" then
-					icon = { icon = icon } ---@type IconData
-				end
+		-- overwrite with new icons
+		for i, icon in pairs(override.icons) do
+			-- shorthand
+			if type(icon) == "string" then
+				icon = { icon = icon } ---@type IconData
+			end
 
-				-- skip if empty (preserves old icons)
-				if override.icons[i] and override.icons[i] ~= "" then
-					target[key].icons[i].icon = graphics_path .. icon.icon
-					target[key].icons[i].icon_size = icon.icon_size or override.icon_size or default.icon_size
-					target[key].icons[i].tint = icon.tint
-					target[key].icons[i].shift = icon.shift
-					target[key].icons[i].scale = icon.scale
-					target[key].icons[i].draw_background = icon.draw_background
-					target[key].icons[i].floating = icon.floating
-				end
+			-- skip if empty (preserves old icons)
+			if override.icons[i] and override.icons[i] ~= "" then
+				target[key].icons[i].icon = graphics_path .. icon.icon
+				target[key].icons[i].icon_size = icon.icon_size or override.icon_size or default.icon_size
+				target[key].icons[i].tint = icon.tint
+				target[key].icons[i].shift = icon.shift
+				target[key].icons[i].scale = icon.scale
+				target[key].icons[i].draw_background = icon.draw_background
+				target[key].icons[i].floating = icon.floating
 			end
 		end
 	elseif override.icon then
